@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <style>
     .content {
@@ -57,10 +58,14 @@
         line-height: 21px;
     }
 
-    .card-item-body span{
-      width: 500rem;
-      height:1rem;
+    .card-item-body p{
+      width: 100%;
       border-bottom: 1px solid #68769A; 
+    }
+
+    .card-item-body p:last-child{
+      width: 100%;
+      border-bottom: none; 
     }
 
     .card-item:not(.active) .up {
@@ -82,12 +87,8 @@
                 <div class="card-item-header">
                     <a href="#">
                         <h3>營業相關</h3>
-                        <img class="down"
-                            src="https://firebasestorage.googleapis.com/v0/b/tzuhui-10c1e.appspot.com/o/others%2F202004%2F1587695028692-ic_keyboard_arrow_up_24px.svg?alt=media&token=538d0f43-c8ac-4443-a60e-1558b37c05b4"
-                            alt="">
-                        <img class="up"
-                            src="https://firebasestorage.googleapis.com/v0/b/tzuhui-10c1e.appspot.com/o/others%2F202004%2F1587695018338-ic_keyboard_arrow_up_24px%20(1).svg?alt=media&token=3d310376-7621-47cd-9617-0c2eb588a504"
-                            alt="">
+                            <i class="fa-solid fa-chevron-down down" style="color: #fafafa;"></i>
+                            <i class="fa-solid fa-chevron-up up" style="color: #ffffff;"></i>
                     </a>
                 </div>
                 <div class="card-item-body">
@@ -98,12 +99,8 @@
                 <div class="card-item-header">
                     <a href="#">
                         <h3>購票資訊</h3>
-                        <img class="down"
-                            src="https://firebasestorage.googleapis.com/v0/b/tzuhui-10c1e.appspot.com/o/others%2F202004%2F1587695028692-ic_keyboard_arrow_up_24px.svg?alt=media&token=538d0f43-c8ac-4443-a60e-1558b37c05b4"
-                            alt="">
-                        <img class="up"
-                            src="https://firebasestorage.googleapis.com/v0/b/tzuhui-10c1e.appspot.com/o/others%2F202004%2F1587695018338-ic_keyboard_arrow_up_24px%20(1).svg?alt=media&token=3d310376-7621-47cd-9617-0c2eb588a504"
-                            alt="">
+                        <i class="fa-solid fa-chevron-down down" style="color: #fafafa;"></i>
+                        <i class="fa-solid fa-chevron-up up" style="color: #ffffff;"></i>
                     </a>
                 </div>
                 <div class="card-item-body">
@@ -113,7 +110,7 @@
                         兒童（4-11歲）：$250
                         學生（需出示有效學生證）：$400
                         長者（65歲以上）：$250</p>
-                        <span>aaa</span>
+                      
                 </div>
                 <div class="card-item-body">
                     <h4>Q:購票方式?</h4>
@@ -129,17 +126,13 @@
                 <div class="card-item-header">
                     <a href="#">
                         <h3>館內服務</h3>
-                        <img class="down"
-                            src="https://firebasestorage.googleapis.com/v0/b/tzuhui-10c1e.appspot.com/o/others%2F202004%2F1587695028692-ic_keyboard_arrow_up_24px.svg?alt=media&token=538d0f43-c8ac-4443-a60e-1558b37c05b4"
-                            alt="">
-                        <img class="up"
-                            src="https://firebasestorage.googleapis.com/v0/b/tzuhui-10c1e.appspot.com/o/others%2F202004%2F1587695018338-ic_keyboard_arrow_up_24px%20(1).svg?alt=media&token=3d310376-7621-47cd-9617-0c2eb588a504"
-                            alt="">
+                        <i class="fa-solid fa-chevron-down down" style="color: #fafafa;"></i>
+                        <i class="fa-solid fa-chevron-up up" style="color: #ffffff;"></i>
                     </a>
                 </div>
                 <div class="card-item-body">
                     <p>1. 導覽和導遊<br>
-                        讓我們的專業導遊帶您深入探索水族館的不同區域，解釋海洋生物的奧秘，並分享有趣的故事。我們的導遊將使您更深入地了解每個展示，讓您有機會提出問題並互動。<p>
+                        讓我們的專業導遊帶您深入探索水族館的不同區域，解釋海洋生物的奧秘，並分享有趣的故事。我們的導遊將使您更深入地了解每個展示，讓您有機會提出問題並互動。</p>
                     <p>
                         2. 動手體驗活動<br>
                         對於年輕和年輕心靈的訪客，我們提供各種動手體驗活動，包括觸摸池、餵食海洋生物和手工藝活動。這是一個互動的方式，讓您更親近海洋世界。</p>
@@ -148,30 +141,26 @@
                         我們定期舉辦特別活動和展覽，通常有限時間內提供。請查看我們的日曆，以了解最新的活動和展覽，這些活動可能包括特別講座、海報展示和主題活動。</p>
                     <p> 4. 禮品店<br>
                         在我們的禮品店，您可以購買精美的海洋主題禮品，包括紀念品、書籍、海洋生物玩具和獨特的手工藝品。您可以帶回家一些特別的東西，以紀念您的水族館訪問。</p>
-                    </p>
+                   
                 </div>
             </li>
             <li class="card-item">
                 <div class="card-item-header">
                     <a href="#">
                         <h3>交通&周邊環境</h3>
-                        <img class="down"
-                            src="https://firebasestorage.googleapis.com/v0/b/tzuhui-10c1e.appspot.com/o/others%2F202004%2F1587695028692-ic_keyboard_arrow_up_24px.svg?alt=media&token=538d0f43-c8ac-4443-a60e-1558b37c05b4"
-                            alt="">
-                        <img class="up"
-                            src="https://firebasestorage.googleapis.com/v0/b/tzuhui-10c1e.appspot.com/o/others%2F202004%2F1587695018338-ic_keyboard_arrow_up_24px%20(1).svg?alt=media&token=3d310376-7621-47cd-9617-0c2eb588a504"
-                            alt="">
+                        <i class="fa-solid fa-chevron-down down" style="color: #fafafa;"></i>
+                        <i class="fa-solid fa-chevron-up up" style="color: #ffffff;"></i>
                             
                     </a>
                 </div>
                 <div class="card-item-body">
                      <h4>Q:如何前往水族館?</h4>
-                    <p>1.自駕車：園區設有汽車停車場收費為150元/次，機車停車場收費50元/次 <p>
+                    <p>1.自駕車：園區設有汽車停車場收費為150元/次，機車停車場收費50元/次 </p>
                     <p>2.公共交通：您可以搭乘當地的公共交通工具，包括巴士、地鐵和有輕軌服務的列車。請查看當地交通網站以獲取最新的路線和時刻表。</p>
                     <h4>Q:周邊環境?</h4>
                     <p>1.公園和花園：我們的水族館附近有美麗的公園和花園，提供放鬆身心的好地方。您可以在那裡野餐、散步或欣賞自然美景。</p>
                     <p>2.購物中心：附近有購物中心，供您購買紀念品、禮物和更多。您可以找到各種品牌和特色商店。</p>
-                    </p>
+                   
                 </div>
             </li>
         </ul>
