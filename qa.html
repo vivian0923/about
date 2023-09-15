@@ -22,17 +22,20 @@
         margin:auto auto auto 0;
 
     }
-
+    /* .card{
+        margin:auto;
+        width:80%;
+    } */
     .card-item {
-        border: 1px solid #68769A;
+        /* border: 1px solid #68769A; */
         list-style: none;
     }
 
     .card-item-header {
         padding: 16px;
-        border-bottom: 1px solid black;
+        /* border-bottom: 1px solid black; */
         background-color: #68769A;
-        /* margin-bottom: 20px; */
+        margin-bottom: 20px;
        
     }
 
@@ -62,17 +65,43 @@
 
     .card-item:not(.active) .up {
         display: none;
-      
     }
 
     .card-item.active .down {
         display: none;
-       
     }
+    .card-item.active{
+        border: 2px solid #68769A;
+        margin-bottom: 50px;
+        border-radius: 5px;
+    }
+    /* @media screen and(max-width:768px){
+      
+       .card{
+        min-width:80%;
+
+       }
+    } */
+        
+    
 </style>
 
 <body>
     <div class="content">
+        <!-- id="app" -->
+        <!-- <ul class="card">
+            <li class="card-item" v-for="(item, index) in cardItems" :key="index">
+                <div class="card-item-header">
+                    <a href="#">
+                        <h3>{{item.eH3}}</h3>
+                        <i class="fa-solid fa-chevron-down down" style="color: #fafafa;"></i>
+                        <i class="fa-solid fa-chevron-up up" style="color: #ffffff;"></i>
+                    </a>
+                    </div>
+                    <div class="card-item-body">
+                        <h4 v-if="item.eH4">{{item.eH4}}</h4>
+                        <p v-html="item.eP">{{item.eP}}</p>
+                </div> -->
 
         <ul class="card">
             <li class="card-item">
@@ -156,8 +185,29 @@
                 </div>
             </li>
         </ul>
+        <!-- <script src="https://unpkg.com/vue@next"></script> -->
         <script>
-           
+        //    const app = Vue.createApp({
+        //     data(){
+        //         return{
+        //             cardItems: [
+        //             {
+        //                 eH3:'營業相關',
+        //                 eH4:false,
+        //                 eP:'營業時間為上午9:00至下午17:00，最後入場時間為下午16:00。國定假日及颱風天休館。'
+        //             },
+        //             {
+        //                 eH3:'購票資訊',
+        //                 eH4:true,
+        //                 eP:"A:一般門票價格：<br>成人：$500<br>兒童（4-11歲）：$250<br>學生（需出示有效學生證）：$400<br>長者（65歲以上）：$250"
+        //             },
+                
+        //         ]
+        //         }
+        //     }
+        // })
+       </script>
+         <script>
             $('.card-item-body').hide();
             $('.card-item').eq(0).addClass('active');
             $('.card-item-body').eq(0).show();
